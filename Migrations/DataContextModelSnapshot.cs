@@ -68,20 +68,20 @@ namespace WebApi.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDateTime = new DateTime(2020, 5, 25, 10, 49, 50, 805, DateTimeKind.Local).AddTicks(1190),
+                            CreatedDateTime = new DateTime(2020, 5, 29, 0, 45, 54, 372, DateTimeKind.Local).AddTicks(4503),
                             DisplayName = "Auditor",
                             InternalIdentifier = "INTERNAL_AUDITOR",
                             LandingPageUrl = "/audit",
-                            LastChangedDateTime = new DateTime(2020, 5, 25, 10, 49, 50, 805, DateTimeKind.Local).AddTicks(7426)
+                            LastChangedDateTime = new DateTime(2020, 5, 29, 0, 45, 54, 373, DateTimeKind.Local).AddTicks(1014)
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDateTime = new DateTime(2020, 5, 25, 10, 49, 50, 805, DateTimeKind.Local).AddTicks(7905),
+                            CreatedDateTime = new DateTime(2020, 5, 29, 0, 45, 54, 373, DateTimeKind.Local).AddTicks(1495),
                             DisplayName = "User",
                             InternalIdentifier = "USER",
                             LandingPageUrl = "/",
-                            LastChangedDateTime = new DateTime(2020, 5, 25, 10, 49, 50, 805, DateTimeKind.Local).AddTicks(7909)
+                            LastChangedDateTime = new DateTime(2020, 5, 29, 0, 45, 54, 373, DateTimeKind.Local).AddTicks(1499)
                         });
                 });
 

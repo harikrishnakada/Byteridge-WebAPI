@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace WebApi.Migrations
 {
-    public partial class migration : Migration
+    public partial class initialmigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -60,7 +60,7 @@ namespace WebApi.Migrations
                     CreatedDateTime = table.Column<DateTime>(nullable: false),
                     LastChangedDateTime = table.Column<DateTime>(nullable: false),
                     LoggedInDateTime = table.Column<DateTime>(nullable: false),
-                    LoggedOutDateTime = table.Column<DateTime>(nullable: false),
+                    LoggedOutDateTime = table.Column<DateTime>(nullable: true),
                     LoggedInUserId = table.Column<int>(nullable: false),
                     ClientIp = table.Column<string>(nullable: true)
                 },
@@ -78,12 +78,12 @@ namespace WebApi.Migrations
             migrationBuilder.InsertData(
                 table: "Roles",
                 columns: new[] { "Id", "CreatedDateTime", "DisplayName", "InternalIdentifier", "LandingPageUrl", "LastChangedDateTime" },
-                values: new object[] { 1, new DateTime(2020, 5, 25, 0, 1, 20, 607, DateTimeKind.Local).AddTicks(8965), "Auditor", "INTERNAL_AUDITOR", "/audit", new DateTime(2020, 5, 25, 0, 1, 20, 608, DateTimeKind.Local).AddTicks(8421) });
+                values: new object[] { 1, new DateTime(2020, 5, 29, 0, 45, 54, 372, DateTimeKind.Local).AddTicks(4503), "Auditor", "INTERNAL_AUDITOR", "/audit", new DateTime(2020, 5, 29, 0, 45, 54, 373, DateTimeKind.Local).AddTicks(1014) });
 
             migrationBuilder.InsertData(
                 table: "Roles",
                 columns: new[] { "Id", "CreatedDateTime", "DisplayName", "InternalIdentifier", "LandingPageUrl", "LastChangedDateTime" },
-                values: new object[] { 2, new DateTime(2020, 5, 25, 0, 1, 20, 608, DateTimeKind.Local).AddTicks(9155), "User", "USER", "/", new DateTime(2020, 5, 25, 0, 1, 20, 608, DateTimeKind.Local).AddTicks(9161) });
+                values: new object[] { 2, new DateTime(2020, 5, 29, 0, 45, 54, 373, DateTimeKind.Local).AddTicks(1495), "User", "USER", "/", new DateTime(2020, 5, 29, 0, 45, 54, 373, DateTimeKind.Local).AddTicks(1499) });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Audits_LoggedInUserId",

@@ -10,8 +10,8 @@ using WebApi.Helpers;
 namespace WebApi.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20200524183120_migration")]
-    partial class migration
+    [Migration("20200528191554_initial-migration")]
+    partial class initialmigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -37,7 +37,7 @@ namespace WebApi.Migrations
 
                     b.Property<int>("LoggedInUserId");
 
-                    b.Property<DateTime>("LoggedOutDateTime");
+                    b.Property<DateTime?>("LoggedOutDateTime");
 
                     b.HasKey("Id");
 
@@ -70,20 +70,20 @@ namespace WebApi.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDateTime = new DateTime(2020, 5, 25, 0, 1, 20, 607, DateTimeKind.Local).AddTicks(8965),
+                            CreatedDateTime = new DateTime(2020, 5, 29, 0, 45, 54, 372, DateTimeKind.Local).AddTicks(4503),
                             DisplayName = "Auditor",
                             InternalIdentifier = "INTERNAL_AUDITOR",
                             LandingPageUrl = "/audit",
-                            LastChangedDateTime = new DateTime(2020, 5, 25, 0, 1, 20, 608, DateTimeKind.Local).AddTicks(8421)
+                            LastChangedDateTime = new DateTime(2020, 5, 29, 0, 45, 54, 373, DateTimeKind.Local).AddTicks(1014)
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDateTime = new DateTime(2020, 5, 25, 0, 1, 20, 608, DateTimeKind.Local).AddTicks(9155),
+                            CreatedDateTime = new DateTime(2020, 5, 29, 0, 45, 54, 373, DateTimeKind.Local).AddTicks(1495),
                             DisplayName = "User",
                             InternalIdentifier = "USER",
                             LandingPageUrl = "/",
-                            LastChangedDateTime = new DateTime(2020, 5, 25, 0, 1, 20, 608, DateTimeKind.Local).AddTicks(9161)
+                            LastChangedDateTime = new DateTime(2020, 5, 29, 0, 45, 54, 373, DateTimeKind.Local).AddTicks(1499)
                         });
                 });
 

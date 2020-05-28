@@ -1,4 +1,4 @@
-using WebApi.Entities;
+using WebApi.Model;
 
 namespace WebApi.Dtos
 {

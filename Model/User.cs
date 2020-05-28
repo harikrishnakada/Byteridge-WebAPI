@@ -1,4 +1,4 @@
-namespace WebApi.Entities
+namespace WebApi.Model
 {
     public class User : DomainModelBase
     {

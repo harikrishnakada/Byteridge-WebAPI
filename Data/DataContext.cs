@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using System;
-using WebApi.Entities;
-using WebApi.Entities.CodeList;
+using WebApi.Model;
+using WebApi.Model.CodeList;
 
-namespace WebApi.Helpers
+namespace WebApi.Data
 {
     public class DataContext : DbContext
     {
